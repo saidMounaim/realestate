@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/selectize.css" type="text/css">
+	<title>Hiba Immo  | Real Estate </title>
+
+	<style>
+		.upload {
+		  position: relative;
+		  display: inline-block;
+		}
+
+		.upload label {
+		  color: #5F626A;
+		  cursor: pointer;
+		  width: 90px;
+		  height: 90px;
+		  position: relative;
+		  display: block;
+		  border: 3px dashed #5F626A;
+		  border-radius: 10px;
+		  overflow: hidden;
+		  transition: background ease .5s;
+		  pointer-events: none; /*This for FF*/
+		}
+
+		.input-file {
+		  opacity: 0; /*This*/
+		  position: absolute;
+		  width: 100%;
+		  height: 100%;
+		  cursor: pointer;
+		}
+
+		.add-image {
+		  display: block;
+		  width: 100%;
+		  margin: 30px auto;
+		  text-align: center;
+		  font-size: 11px;
+		  font-family: sans-serif;
+		}		
+	</style>
+
+</head>
+
+<body class="page-homepage" id="page-top">
+	<!-- Preloader -->
+	<div id="page-preloader">
+		<div class="loader-ring"></div>
+		<div class="loader-ring2"></div>
+	</div>
+	<!-- End Preloader -->
+
+	<!-- Wrapper -->
+	<div class="wrapper">
+		<!-- Start Header -->
+		<div id="header" class="menu-wht"></div>
+		<!-- End Header -->
+
+		<!-- Page Content -->
+		<div id="page-content_home">
+			<div class="home_2">
+				<div id="owl-demo-header" class="owl-carousel owl-theme carousel-full-width">
+					<div class="item">
+						<span class="filter"></span>
+						<div class="head-title-2" style="background: url(assets/img/slider/slider2.jpg) center;background-size: cover;">
+							<div class="container">
+								<div class="title col-lg-6 col-lg-offset-0 col-md-6 col-sm-8 col-sm-offset-1 col-xs-9 col-xs-offset-1">
+									<h1>Excellent appartement<br> à Martil</h1>
+									<h4>acheter un Appartement de luxe en 1er étage 50 m² ,5 min au bord de la mer compose un salon en-fac ...</h4>
+									<span class="ffs-bs"><a href="property_page.html" class="btn btn-large btn-primary">Plus d'infos</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<span class="filter"></span>
+						<div class="head-title-2" style="background: url(assets/img/slider/slider1.jpg) center;background-size: cover;">
+							<div class="container">
+								<div class="title col-lg-6 col-lg-offset-0 col-md-6 col-sm-8 col-sm-offset-1 col-xs-9 col-xs-offset-1">
+									<h1>Excellent appartement<br> à Martil</h1>
+									<h4>acheter un Appartement de luxe en 1er étage 50 m² ,5 min au bord de la mer compose un salon en-fac ...</h4>
+									<span class="ffs-bs"><a href="property_page.html" class="btn btn-large btn-primary">Plus d'infos</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+					<ol class="breadcrumb">
+						<li><a href="index.html">Accueil</a></li>
+						<li class="active">Evaluer votre bien</li>
+					</ol>
+			    <form method="POST">
+			        <div id="evalua">
+			            <div class="card card-default">
+						<div class="explore">
+							<h2 style="margin-top:10px !important;">Evaluer votre bien</h2>
+							<h5 class="team-color" style="margin-bottom:36px;">Les informations de votre bien immobilier</h5>
+						</div>
+
+			                <div id="collapse1" class="collapse show">
+			                    <div class="card-body">
+			                        <div class="row">
+			                            <div class="col-md-4 col-lg-6">
+			                                <div class="form-group">
+			                                    <label for="categorie"> Type de transaction </label>
+			                                    <select id="categorie" class="form-control" />
+													<option>Catégorie</option>
+													<option value="Commercial">Commercial</option>
+													<option value="Habitat">Habitat</option>
+			                                    <select/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-1 col-lg-6">
+			                                <div class="form-group">
+			                                    <label for="age_bien" class="control-label">L’âge du Bien Exact</label>
+			                                    <input id="age_bien" type="text" class="form-control" placeholder="L’âge du Bien Exact" onfocus="this.placeholder = ''" onblur="this.placeholder = 'L’âge du Bien Exact'" />
+			                                </div>
+			                            </div>
+			                        </div>
+			                        <div class="row">
+			                            <div class="col-md-3 col-lg-6">
+			                                <div class="form-group">
+			                                    <label for="type_bien" class="control-label">Type du bien</label>
+			                                    <input id="type_bien" type="text" class="form-control" placeholder="Type du bien" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Type du bien'" />
+			                                </div>
+			                            </div>
+			                            <div class="col-md-1 col-lg-6">
+			                                <div class="form-group">
+			                                    <label for="adresse_bien" class="control-label">Adresse du Bien</label>
+			                                    <input id="adresse_bien" type="text" class="form-control" placeholder="Adresse du Bien" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adresse du Bien'" />
+			                                </div>
+			                            </div>
+			                        </div>
+			                        <div class="row">
+			                            <div class="col-md-4 col-lg-4">
+			                                <div class="form-group">
+			                                    <label for="etat_bien"> Etat du bien  </label>
+			                                    <select id="etat_bien" class="form-control" />
+													<option>Etat du bien</option>
+													<option value="Neuf">Neuf</option>
+													<option value="Bon état">Bon état</option>
+													<option value="Récent">Récent</option>
+													<option value="Ancien">Ancien</option>
+			                                    <select/>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-2 col-lg-4">
+			                                <div class="form-group">
+			                                    <label for="emplacement" class="control-label">L’emplacement</label>
+			                                    <input id="emplacement" type="text" class="form-control" placeholder="L’emplacement" onfocus="this.placeholder = ''" onblur="this.placeholder = 'L’emplacement'" />
+			                                </div>
+			                            </div>
+
+			                            <div class="col-md-3 col-lg-4">
+			                                <div class="form-group">
+			                                    <label for="prix_achat" class="control-label">Au Cas de location Le prix d’achat</label>
+			                                    <input id="prix_achat" type="text" class="form-control" placeholder="Au Cas de location Le prix d’achat" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Au Cas de location Le prix d’achat'" />
+			                                </div>
+			                            </div>                     
+			                        </div>
+			                    </div>`
+			                </div>
+			            </div>
+			            <br/>
+			        </div>
+			        <div id="evalua">
+			            <div class="card card-default">
+						<div class="explore">
+							<h2 style="margin-top:10px !important;margin-bottom:36px;">Caractéristiques Générales</h2>
+							<h5 class="team-color"></h5>
+						</div>
+
+			                <div id="collapse1" class="collapse show">
+			                    <div class="card-body">
+			                        <div class="row">
+			                            <div class="col-md-4 col-lg-4">
+			                                <div class="form-group">
+			                                    <label for="etage" class="control-label">Etage</label>
+			                                    <input id="etage" type="text" class="form-control" placeholder="Etage" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Etage'" />
+			                                </div>
+			                            </div>
+			                            <div class="col-md-1 col-lg-4">
+			                                <div class="form-group">
+			                                    <label for="dans_rue" class="control-label">Dans la rue</label>
+			                                    <input id="dans_rue" type="text" class="form-control" placeholder="Dans la rue" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Dans la rue'" />
+			                                </div>
+			                            </div>
+			                            <div class="col-md-4 col-lg-4">
+			                                <div class="form-group">
+			                                    <label for="vis_avis"> Vis-à- vis </label>
+			                                    <select id="vis_avis" class="form-control" />
+													<option>Vis-à- vis</option>
+													<option value="Commercial">Oui</option>
+													<option value="Non">Non</option>
+			                                    <select/>
+			                                </div>
+			                            </div>			                            
+			                        </div>
+			                        <div class="row">
+			                            <div class="col-md-4 col-lg-4">
+			                                <div class="form-group">
+			                                    <label for="boulevard" class="control-label">Sur Boulevard</label>
+			                                    <input id="boulevard" type="text" class="form-control" placeholder="Sur Boulevard" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Sur Boulevard'" />
+			                                </div>
+			                            </div>
+			                            <div class="col-md-1 col-lg-4">
+			                                <div class="form-group">
+			                                    <label for="garage" class="control-label">Garage</label>
+			                                    <input id="garage" type="text" class="form-control" placeholder="Garage" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Garage'" />
+			                                </div>
+			                            </div>
+			                            <div class="col-md-4 col-lg-4">
+			                                <div class="form-group">
+			                                    <label for="surface_total" class="control-label">Surface Total</label>
+			                                    <input id="surface_total" type="text" class="form-control" placeholder="Surface Total" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Surface Total'" />
+			                                </div>
+			                            </div>				                            		                            
+			                        </div>
+			                        <div class="row">
+			                            <div class="col-md-4 col-lg-4">
+			                                <div class="form-group">
+			                                    <label for="ascenseur" class="control-label">Ascenseur</label>
+			                                    <input id="ascenseur" type="text" class="form-control" placeholder="Ascenseur" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ascenseur'" />
+			                                </div>
+			                            </div>
+			                            <div class="col-md-1 col-lg-4">
+			                                <div class="form-group">
+			                                    <label for="pièces" class="control-label">Pièces</label>
+			                                    <input id="pièces" type="text" class="form-control" placeholder="Pièces" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Pièces'" />
+			                                </div>
+			                            </div>
+			                            <div class="col-md-4 col-lg-4">
+			                                <div class="form-group">
+			                                    <label for="rsidence_fermé" class="control-label">Résidence fermé</label>
+			                                    <input id="residence_fermé" type="text" class="form-control" placeholder="Résidence fermé" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Résidence fermé'" />
+			                                </div>
+			                            </div>	                   
+			                        </div>
+			                        <div class="row">
+			                            <div class="col-md-6 col-lg-4">
+			                                <div class="form-group">
+			                                    <label for="hauteur" class="control-label">La hauteur</label>
+			                                    <input id="hauteur" type="text" class="form-control" placeholder="La hauteur" onfocus="this.placeholder = ''" onblur="this.placeholder = 'La hauteur'" />
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6 col-lg-4">
+			                                <div class="form-group">
+			                                    <label for="rideux" class="control-label">Les rideux</label>
+			                                    <input id="rideux" type="text" class="form-control" placeholder="Les rideux" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Les rideux'" />
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6 col-lg-4">
+			                            	<div class="col-md-4" >
+				                                <div class="form-group">
+				                                    <label class="control-label">Photo 1</label>
+													<div class="upload" upload-image="">
+													  <input type="file" id="files" name="files" class="input-file ng-pristine ng-valid ng-touched" files-model="" ng-model="project.fileList">
+													  <label for="files">
+													    <span class="add-image">
+													      Add <br> Image
+													    </span>
+													    <output id="list"></output>
+													  </label>
+													</div>
+				                                </div>
+			                                </div>
+			                            	<div class="col-md-4" >
+				                                <div class="form-group">
+				                                	<label class="control-label">Photo 2</label>
+													<div class="upload" upload-image="">
+													  <input type="file" id="files" name="files" class="input-file ng-pristine ng-valid ng-touched" files-model="" ng-model="project.fileList">
+													  <label for="files">
+													    <span class="add-image">
+													      Add <br> Image
+													    </span>
+													    <output id="list"></output>
+													  </label>
+													</div>
+				                                </div>
+			                                </div>
+			                            	<div class="col-md-4" >
+				                                <div class="form-group">
+				                                <label class="control-label">Photo 3</label>
+												<div class="upload" upload-image="">
+													  <input type="file" id="files" name="files" class="input-file ng-pristine ng-valid ng-touched" files-model="" ng-model="project.fileList">
+													  <label for="files">
+													    <span class="add-image">
+													      Add <br> Image
+													    </span>
+													    <output id="list"></output>
+													  </label>
+													</div>
+				                                </div>
+			                                </div>			                                			                                
+			                            </div>
+			                            <div class="row" >
+			                            	<div class="col-md-12" >
+				                                <div class="form-group">
+				                                	<label id="commentaire" class="control-label">Votre Commentaire</label>
+				                                	<textarea name="commentaire" class="form-control" id="commentaire" placeholder="Votre Commentaire" cols="30" rows="10" style="margin: 0px -581px 0px 0px; width: 1151px; height: 232px;"></textarea>
+			                                	</div>			                                			                                
+			                                </div>
+								            <div class="col-lg-12">
+								                <div class="pull-left">
+								                    <a href="" class="btn btn-success btn-lg" id="btnSubmit">Submit</a>
+								                </div>
+								            </div>                       
+			                            </div>			                            						                               
+			                        </div>
+			                    </div>`
+			                </div>
+			            </div>
+			            <br/>
+			        </div>			        
+			    </form>
+			</div>
+
+			<div class="wide-3">
+				<div class="explore">
+					<h2>Besoin d’aide? Cliquez ici</h2>
+					<h5 class="team-color"></h5>
+				</div>
+				<div class="container">
+					<div class="row">
+				        <div class="col-md-4 col-sm-6">
+				            <div class="serviceBox">
+				                <div class="service-icon">
+				                    <i class="fa fa-envelope"></i>
+				                </div>
+				                <div class="service-content">
+				                    <a href="" class="title">Contactez notre équipe hibaimmo.com</a>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="col-md-4 col-sm-6">
+				            <div class="serviceBox">
+				                <div class="service-icon">
+				                    <i class="fa fa-home"></i>
+				                </div>
+				                <div class="service-content">
+				                    <a href="" class="title">Vendre votre <br>propriété</a>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="col-md-4 col-sm-6">
+				            <div class="serviceBox">
+				                <div class="service-icon">
+				                    <i class="fa fa-file-text-o"></i>
+				                </div>
+				                <div class="service-content">
+				                    <a href="" class="title">Demande <br>d'évaluation</a>
+				                </div>
+				            </div>
+				        </div>			        				        
+					</div>
+				</div>
+			</div>
+			<!-- end wide-3 -->
+				<section class="block testimonials" style="background:url(assets/img/testimonials.jpg) center;background-size: cover;color:#fff;">
+					<div class="container">
+					<header class="center">
+						<h2 class="no-border" style="color:#fff;">Que disent nos clients ?</h2>
+					</header>
+					<div class="owl-carousel testimonials-carousel">
+						<blockquote class="item">
+							<aside class="cite">
+								<p class="team-color"style="color:#fff;">"Excellent accueil lors du premier contact avec l'agence. Professionnalisme, réactivité, conseils avisés, tout ce que l'on peut espérer d'un agent immobilier. Ne changez rien, maintenez seulement le niveau actuel."</p>
+							</aside>
+							<figure>
+								<p>Sara (39 ans)</p>
+								<br>
+							</figure>
+						</blockquote>
+						<blockquote class="item">
+							<aside class="cite">
+								<p class="team-color"style="color:#fff;">"J'ai bien été renseignée sur les biens visités. Tout a été réglé sans problème"</p>
+							</aside>
+							<figure>
+								<p>Ahmed (30 ans)</p>
+								<br>
+							</figure>
+						</blockquote>
+						<blockquote class="item">
+							<aside class="cite">
+								<p class="team-color"style="color:#fff;">"Je recommande l'Agence Hibaimmo pour son professionnalisme et son sérieux"</p>
+							</aside>
+							<figure>
+								<p>Sabrine (33 ans)</p>
+								<br>
+							</figure>
+						</blockquote>
+					</div>
+					</div>
+				</section>
+			<!-- end container -->
+			<div class="wide-3">
+				<div class="container">
+				<div class="logo-cont">
+					<div class="logos" style="background:url(assets/img/backgrounds/photo1.jpg) center no-repeat"></div>
+				</div>
+				<div class="logo-cont">
+					<div class="logos" style="background:url(assets/img/backgrounds/photo2.jpg) center no-repeat"></div>
+				</div>
+				<div class="logo-cont">
+					<div class="logos" style="background:url(assets/img/backgrounds/photo3.jpg) center no-repeat"></div>
+				</div>
+				<div class="logo-cont">
+					<div class="logos" style="background:url(assets/img/backgrounds/photo4.jpg) center no-repeat"></div>
+				</div>
+				<div class="logo-cont">
+					<div class="logos" style="background:url(assets/img/backgrounds/photo5.jpg) center no-repeat"></div>
+				</div>
+				</div>
+			</div>
+			<!-- end wide-3 -->
+		</div>
+		<!-- end Page Content -->
+		
+		<!-- Start Footer -->
+
+<div class="footer-bottom text-center" style="padding: 30px;">
+	<div class="row">
+		<ul class="social-list" style="list-style: none;display: inline-flex;">
+		<li><a href="http://facebook.com/" target="_blank"><i class="fa fa-facebook-square" style="font-size: 20px;margin-left: 10px;"></i></a></li>
+		<li><a href="http://linkedin.com/" target="_blank"><i class="fa fa-linkedin-square" style="font-size: 20px;margin-left: 10px;"></i></a></li>
+		<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" style="font-size: 20px;margin-left: 10px;"></i></a></li>
+		</ul>
+	<div class="copyright-text">Copyright © 2018 hibaimmo.com</div>	
+	</div>
+</div>
+
+
+	<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="assets/js/selectize.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/custom-map.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+<!--[if gt IE 8]>
+<script type="text/javascript" src="assets/js/ie.js"></script>
+<![endif]-->
+</body>
+</html>
